@@ -49,7 +49,7 @@ where users.user_id = 1;
    */
   return db('users')
     .join('roles', 'users.role_id', 'roles.role_id')
-    .select('user_id', 'username', 'passwor', 'role_name')
+    .select('user_id', 'username', 'password', 'role_name')
     .where(filter)
 }
 
